@@ -83,3 +83,14 @@ SQL은 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관�
 > ##### ex) SELECT id,title,created,author FROM topic WHERE author='wonny';
 > ##### ex) SELECT id,title,created,author FROM topic WHERE author='wonny' ORDER BY id DESC;
 > ##### ex) SELECT id,title,created,author FROM topic WHERE author='wonny' ORDER BY id DESC LIMIT 2;
+
+> #### UPDATE [tableName] SET [바꿀항목=바꿀내용] WHERE [바꿀 위치];
+> ##### ex) UPDATE topic SET description='ORACLE is .....', title='Oracle' WHERE id=2;
+> - WHERE를 빼고 실행시키면 모든 행에 다 적용되므로 돌이킬수 없는 강을 건너버린다. 반드시 그런일이 일어나지 않도록 조심하고 또 조심하자.
+
+> #### DELETE [tableName] WHERE [삭제할 위치];
+> ##### ex) DELETE FROM topic WHERE id=5;
+> - WHETE 빼고 쓰면 모두 삭제되므로 절대 주의!!
+
+
+
