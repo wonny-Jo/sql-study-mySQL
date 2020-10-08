@@ -41,4 +41,11 @@ SQL은 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관�
 > #### USE [databaseName];
 > - MySQL에게 내가 접근할 데이터베이스가 무엇인지 알려줌. 이를 통해 내가 업데이트하고자하는 데이터베이스에 접근가능
 ### 표 관련
-> 
+> #### CREATE TABLE [tableName](
+> [1번열 title] [data_type]([data_length]),
+> ...
+> )
+> - 테이블 생성. dataType은 해당 데이터의 type에 맞게 사용. type의 종류는 검색해볼것. length는 노출시킬 데이터의 범위를 의미. 
+> ##### ex) CREATE TABLE topic(
+> -> id INT(11) NOT NULL AUTO_INCREMENT,    
+>> NOT NULL을 추가하면 데이터의 값이 없는것을 허용하지 않음. AUTO_INCREMENT는 숫자가 자동적으로 하나씩 늘어나게됨
