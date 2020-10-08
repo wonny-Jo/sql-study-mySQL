@@ -90,7 +90,7 @@ SQL은 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관�
 
 > #### DELETE [tableName] WHERE [삭제할 위치];
 > ##### ex) DELETE FROM topic WHERE id=5;
-> - WHETE 빼고 쓰면 모두 삭제되므로 절대 주의!!
+> - WHERE 빼고 쓰면 모두 삭제되므로 절대 주의!!
 
 
 
