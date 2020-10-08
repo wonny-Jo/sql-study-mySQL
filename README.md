@@ -21,5 +21,11 @@
 - 데이터베이스 or 스키마 : 서로 연관된 데이터들을 그룹핑하여 만든 표들로 구성된 일종의 파일의 폴더개념 
 - 데이터베이스 서버 : 데이터베이스들을 관리함. 
 ## MySQL 문법 정리
-
-
+### CREATE DATABASE [databaseName];
+- databaseName으로 데이터베이스 생성
+### DROP DATABASE [databaseName];
+- databaseName의 데이터베이스 삭제
+### SHOW (DATABASES | SCHEMAS);
+- 데이터베이스 내용 출력
+### USE [databaseName];
+- MySQL에게 내가 접근할 데이터베이스가 무엇인지 알려줌. 이를 통해 내가 업데이트하고자하는 데이터베이스에 접근가능
