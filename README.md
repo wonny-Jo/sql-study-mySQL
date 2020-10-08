@@ -42,7 +42,7 @@ SQL은 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관�
 > - MySQL에게 내가 접근할 데이터베이스가 무엇인지 알려줌. 이를 통해 내가 업데이트하고자하는 데이터베이스에 접근가능
 ### 표 관련
 > #### CREATE TABLE [tableName](
-> [1번열 title] [data_type] (length),
+> [1번열 항목] [data_type] (length),
 
 > ...
 
@@ -76,6 +76,10 @@ SQL은 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관�
 > ##### ex) INSERT INTO topic (title,description,created,author,profile) VALUES('MySQL','MySQL is ...',NOW(),'wonny','developer');
 > - created에 매칭되는 곳에 NOW()를 사용하였는데 이는 현재시간을 말함
 
-> ### SELECT * FROM [tableName];
-> - tableName에 있는 데이터를 읽어옴
+> #### SELECT [열의 항목들] FROM [tableName];
+> - tableName에 있는 데이터를 원하는 [열의 항목들]만 읽어옴. [열의 항목들]을 *로 할 경우 전체를 받아옴.
 
+> ##### ex) SELECT id,title,created,author FROM topic;
+> ##### ex) SELECT id,title,created,author FROM topic WHERE author='wonny';
+> ##### ex) SELECT id,title,created,author FROM topic WHERE author='wonny' ORDER BY id DESC;
+> ##### ex) SELECT id,title,created,author FROM topic WHERE author='wonny' ORDER BY id DESC LIMIT 2;
