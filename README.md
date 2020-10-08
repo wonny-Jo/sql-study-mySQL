@@ -11,3 +11,9 @@
 2) cd 명령어를 통해 C:\Bitnami\wampstack-7.4.10-0\mysql\bin로 이동 (설치한 버젼에 맞게)
 3) mysql -uroot -p로 프로그램 실행. 후에 설치시 입력한 비밀번호 입력
 4) 완료
+
+## MySQL 문법 정리
+-u[username] -p
+- -u는 유저을 의미한다. username으로 접근한다. username이 root인 경우 root권한으로 접근
+- -p는 해당 username에 비밀번호가 설정되어있지 않은 경우에는 생략해도 된다. 그러나 비밀번호가 설정되어 있는데 생략하게되면 에러발생.
+
