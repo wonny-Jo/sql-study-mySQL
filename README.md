@@ -50,10 +50,16 @@ SQL은 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관�
 > - 테이블 생성. dataType은 해당 데이터의 type에 맞게 사용. type의 종류는 검색해볼것. length는 노출시킬 데이터의 범위를 의미. 
 > ##### ex) CREATE TABLE topic(
 > -> id INT(11) NOT NULL AUTO_INCREMENT,
+
 > -> title VARCHAR(100) NOT NULL,
+
 > -> description TEXT NULL,
+
 > -> created DATETIME NOT NULL,
+
 > -> author VARCHAR(30) NULL,
+
 > -> profile VARCHAR(100) NULL,
+
 > -> PRIMARY KEY(id));   
 >> NOT NULL은 데이터의 값이 없는것을 허용하지 않음. NULL은 반대. AUTO_INCREMENT는 숫자가 자동적으로 하나씩 늘어나게됨. 각 데이터타입은 찾아서 적절한 타입으로 생성할것. PRIMARY KEY는 고유키로써 해당 열의 데이터 값들은 중복없이 고유한 값을 가져야함을 의미.
