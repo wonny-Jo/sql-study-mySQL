@@ -63,3 +63,19 @@ SQL은 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관�
 
 > -> PRIMARY KEY(id));   
 >> NOT NULL은 데이터의 값이 없는것을 허용하지 않음. NULL은 반대. AUTO_INCREMENT는 숫자가 자동적으로 하나씩 늘어나게됨. 각 데이터타입은 찾아서 적절한 타입으로 생성할것. PRIMARY KEY는 고유키로써 해당 열의 데이터 값들은 중복없이 고유한 값을 가져야함을 의미.
+
+> #### SHOW TABLES;
+> - 생성된 테이블들을 보여줌
+
+> #### DESC [tableName];
+> - 해당 테이블의 field, type, NULL등의 정보가 출력됨
+
+> #### INSERT INTO [tableName] ([fieldName,]) VALUES([value,]);
+> - tableName의 table안에서 fieldName과 value를 매칭하여 데이터 생성. fieldName과 value의 순서 중요. 순서에 따라 매칭됨.
+
+> ##### ex) INSERT INTO topic (title,description,created,author,profile) VALUES('MySQL','MySQL is ...',NOW(),'wonny','developer');
+> - created에 매칭되는 곳에 NOW()를 사용하였는데 이는 현재시간을 말함
+
+> ### SELECT * FROM [tableName];
+> - tableName에 있는 데이터를 읽어옴
+
